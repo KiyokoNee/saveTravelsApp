@@ -17,6 +17,15 @@ form {
 	margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+  border: 2px solid black;
+  color: white;
+  background-color: dodgerblue;
+  box-shadow: 4px 4px 5px gray;
+  padding: 10px 15px;
+}
+
 #expenseDisplay {
   width: 80%;
   text-align: center;
@@ -74,11 +83,19 @@ form {
 
 .actions a {
 	margin: 20px auto;
+	line-height: 3em;
 }
 
 .buttonForm {
 	width: 10%;
 	margin: 20px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttonForm button {
+	background-color: crimson;
 }
 
 input {

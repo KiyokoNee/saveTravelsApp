@@ -28,7 +28,7 @@
 						<td><c:out value="$ ${expense.amount}"></c:out></td>
 						<td class="actions"><a href="/expenses/${expense.id}/edit">Edit</a>
 							<form:form class="buttonForm" action="/expenses/${expense.id}" method="delete">
-								<button>Delete</button>
+								<button class="deleteButton">Delete</button>
 							</form:form>
 						</td>
 					</tr>
