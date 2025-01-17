@@ -11,8 +11,4 @@ import com.gearing.savetravels.models.Expense;
 @Repository
 public interface ExpenseRepository extends CrudRepository<Expense, Long> {
 	List<Expense> findAll();
-	
-	Optional<Expense> findById(Long id);
-	
-	void deleteById(Long id);
 }

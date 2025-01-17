@@ -27,7 +27,8 @@
 						<td><c:out value="${expense.vendorName}"></c:out></td>
 						<td><c:out value="$ ${expense.amount}"></c:out></td>
 						<td class="actions"><a href="/expenses/${expense.id}/edit">Edit</a>
-							<form:form class="buttonForm" action="/expenses/${expense.id}" method="delete">
+							<form:form class="buttonForm" action="/expenses/${expense.id}" method="post">
+								<input type="hidden" name="_method" value="delete" />
 								<button class="deleteButton">Delete</button>
 							</form:form>
 						</td>
